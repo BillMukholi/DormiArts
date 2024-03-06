@@ -183,3 +183,12 @@ require_once ASTRA_THEME_DIR . 'inc/core/markup/class-astra-markup.php';
 require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-filters.php';
 require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-hooks.php';
 require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-functions.php';
+
+
+function dormi_arts_scripts() {
+
+	wp_enqueue_style( 'dormi_arts', get_template_directory_uri(). "/assets/css/dormi.css", array());
+	wp_style_add_data( 'dormi_arts', 'rtl', 'replace' );
+
+}
+add_action( 'wp_enqueue_scripts', 'dormi_arts_scripts' );
