@@ -59,7 +59,13 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 	astra_header_before();
 
 	// astra_header(); ?>
-
+	<div class="page-splash-cont" id="page-splash-cont">
+		<div class="page-splash">
+			<div  class="page-splash-img-cont">
+				<img class="page-splash-img" src="<?php echo get_template_directory_uri().'/assets/images/logo-color.png' ?>">
+			</div>
+		</div>
+	</div>
 	<header class="header">
 		<div class="header-cont">
 			<div class="header-desktop">

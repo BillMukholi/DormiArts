@@ -71,12 +71,19 @@ body{
     z-index: 10;
     width: 100%;
     min-width: 10cm;
-    height: 90%;
     bottom: 0px;
+    //background: pink;
+    @media(min-width:0px){
+        display: none !important;
+    }
+    @media(min-width:1023px){
+        display: block !important;
+    }
     .post-navigation-area{
-        position: relative;
+        position: sticky;
+        top: 4cm;
         width: 100%;
-        height: inherit;
+        //height: 5cm;
     }
 }
 .post-navigation-area-bg-cont{
@@ -89,6 +96,7 @@ body{
     width: 100%;
     z-index: 12;
     background-color: rgb(248, 248, 248);
+    background-color: #E9F3F0;
     padding-bottom: 0.5cm;
     .post-navigation-area-top-control{
         position: relative;
@@ -111,11 +119,13 @@ body{
             margin: 7px 0px;
             border-radius: 10px;
             background: rgba(0, 0, 0, 0.1);
+            background: white;
             .post-navigation-area-link-text{
                 margin: 0px;
                 margin-left: 20px;
                 font-weight: 700;
                 text-transform: capitalize;
+                color: #377860;
 
             }
             
@@ -124,7 +134,42 @@ body{
     }
 }
 
+//SPLASH-SCREEN
+.page-splash-cont{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    .page-splash{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: white;
+        .page-splash-img-cont{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            .page-splash-img{
+                width: 3cm;
+                animation: page-splash-img-animation 1.25s ease-in-out infinite;
+            }
 
+            @keyframes page-splash-img-animation {
+                0% {
+                    transform: scale(1);
+                  }
+                  50% {
+                    transform: scale(1.25);
+                  }
+                  100% {
+                    transform: scale(1);
+                  }
+              }
+        }
+    }
+}
 
 //HEADER
 .header{

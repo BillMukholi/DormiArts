@@ -190,5 +190,8 @@ function dormi_arts_scripts() {
 	wp_enqueue_style( 'dormi_arts', get_template_directory_uri(). "/assets/css/dormi.css", array());
 	wp_style_add_data( 'dormi_arts', 'rtl', 'replace' );
 
+	wp_enqueue_script( 'Query', get_template_directory_uri() . '/assets/js/dormi.js', array(), 1.0, true);
+
+
 }
 add_action( 'wp_enqueue_scripts', 'dormi_arts_scripts' );
