@@ -92,7 +92,7 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 											echo wp_get_current_user()->display_name;
 										echo '</a>';
 										} else {
-											echo '<a href="'.site_url().'/authentication">';
+											echo '<a href="'.site_url().'/login">';
 												echo 'Login | Signup';
 											echo '</a>';
 										}
@@ -127,7 +127,7 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 								<a class="header-desktop-checkout-btn" href="#">
 									<p  class="header-desktop-checkout-btn-text">Shop</p>
 									<div  class="header-desktop-checkout-number-cont">
-										<p class="header-desktop-checkout-number">0</p>
+										<p class="header-desktop-checkout-number"><?php echo WC()->cart->get_cart_contents_count(); ?></p>
 									</div>
 								</a>
 							</div>
@@ -154,7 +154,7 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 				<div class="header-mobile-right">
 					<a href="#" class="header-mobile-cart-link">
 						<div class="header-mobile-cart-number-cont">
-							<p class="header-mobile-cart-number">0</p>
+							<p class="header-mobile-cart-number"><?php echo WC()->cart->get_cart_contents_count(); ?></p>
 						</div>
 						<img class="header-mobile-cart-icon" src="<?php echo get_template_directory_uri().'/assets/icon/shoppingBag.svg' ?>">
 					</a>
@@ -162,6 +162,41 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 			</div>
 		</div>
 	</header>
+	<div class="mobile-navigation-cont">
+		<div class="mobile-navigation">
+			<ul class="mobile-navigation-list">
+				<?php
+					wp_nav_menu(array(
+						'menu' => 'primary',
+						'container' => false,
+						'items_wrap' => '%3$s',
+					)); 
+
+				?>
+				<?php
+					wp_nav_menu(array(
+						'menu' => 'top',
+						'container' => false,
+						'items_wrap' => '%3$s',
+					)); 
+
+				?>
+				<li>
+					<?php
+						if ( is_user_logged_in() ) {
+						echo '<a href="'.wp_logout_url( home_url() ).'">';
+							echo 'Logout '.wp_get_current_user()->display_name;
+						echo '</a>';
+						} else {
+							echo '<a href="'.site_url().'/login">';
+								echo 'Login | Signup';
+							echo '</a>';
+						}
+					?>
+				</li>
+			</ul>
+		</div>
+	</div>
 
 
 	
