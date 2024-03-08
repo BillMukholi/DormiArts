@@ -964,7 +964,7 @@ body{
                     text-transform: capitalize;
                 }
                 ul{
-                    display: none;
+                    // display: none;
                     width: 100%;
                     opacity: 0;
                     height: 0;
@@ -985,6 +985,7 @@ body{
                 background: rgb(222, 222, 222);
             }
             .menu-item-has-children{
+                //background: pink;
             }
         }
     }

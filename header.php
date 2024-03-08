@@ -124,7 +124,7 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 								</ul>
 							</nav>
 							<div class="header-desktop-checkout-cont">
-								<a class="header-desktop-checkout-btn" href="#">
+								<a class="header-desktop-checkout-btn" href="<?php echo site_url().'/shop'; ?>">
 									<p  class="header-desktop-checkout-btn-text">Shop</p>
 									<div  class="header-desktop-checkout-number-cont">
 										<p class="header-desktop-checkout-number"><?php echo WC()->cart->get_cart_contents_count(); ?></p>
@@ -185,11 +185,11 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 					<?php
 						if ( is_user_logged_in() ) {
 						echo '<a href="'.wp_logout_url( home_url() ).'">';
-							echo 'Logout '.wp_get_current_user()->display_name;
+							echo 'Logout ('.wp_get_current_user()->display_name.')';
 						echo '</a>';
 						} else {
 							echo '<a href="'.site_url().'/login">';
-								echo 'Login | Signup';
+								echo 'Login / Signup';
 							echo '</a>';
 						}
 					?>

@@ -76,3 +76,35 @@ hamburgerMenu.addEventListener('click',()=>{
     }
 })
 
+//MOBILE NAVIGATION ANIMATION
+let mobileMenuItemWithChildren = document.getElementsByClassName("menu-item-has-children")
+let mobileMenuItemWithChildrenSubMenu = document.getElementsByClassName("sub-menu")
+
+let subItemsAnimation = gsap.timeline()
+subItemsAnimation.pause()
+
+for(let i = 0; i<mobileMenuItemWithChildren.length; i++){
+    let mainItem = mobileMenuItemWithChildren[i]
+    let subitem = mainItem.querySelector('ul')
+    mobileMenuItemWithChildren[i].addEventListener('click',()=>{
+        if(mobileMenuItemWithChildren[i].hasAttribute('open')){
+            if(mobileMenuItemWithChildren[i].getAttribute('open') == 'false'){
+                mobileMenuItemWithChildren[i].setAttribute('open','true')
+                gsap.set(subitem,{opacity:1})
+                gsap.to(subitem,{height:'auto'})
+            }
+            else{
+                mobileMenuItemWithChildren[i].setAttribute('open','false')
+                gsap.set(subitem,{opacity:0})
+                gsap.to(subitem,{height:0})
+            }
+        }
+        else{
+            mobileMenuItemWithChildren[i].setAttribute('open','false')
+            gsap.set(subitem,{opacity:1})
+            gsap.to(subitem,{height:'auto'})
+        }
+    })
+}
+
+

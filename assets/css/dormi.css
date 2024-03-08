@@ -871,7 +871,6 @@ body {
   text-transform: capitalize;
 }
 .mobile-navigation-cont .mobile-navigation .mobile-navigation-list li ul {
-  display: none;
   width: 100%;
   opacity: 0;
   height: 0;
