@@ -1825,79 +1825,6 @@ p {
   text-transform: capitalize;
 }
 
-.products {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  margin: 0 auto;
-}
-
-.product {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-.product .woocommerce-LoopProduct-link {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  overflow: hidden;
-  text-decoration: none;
-}
-.product .woocommerce-LoopProduct-link .onsale {
-  position: absolute;
-  z-index: 2;
-  background: #377860;
-  color: white;
-  padding: 10px 50px;
-  left: -35px;
-  top: 10px;
-  transform: rotate(-45deg);
-  text-decoration: none;
-}
-.product .woocommerce-LoopProduct-link img {
-  position: relative;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: auto;
-}
-.product .woocommerce-LoopProduct-link .woocommerce-loop-product__title {
-  text-decoration: none;
-  color: black;
-  font-size: 1.25em;
-  margin-left: 10px;
-  margin-bottom: 5px;
-  margin: 0 5%;
-  margin-top: 20px;
-}
-.product .woocommerce-LoopProduct-link .price {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  margin: 0 5%;
-}
-.product .woocommerce-LoopProduct-link .price del {
-  position: relative;
-  color: gray;
-  font-size: 0.9em;
-  font-weight: 400;
-}
-.product .woocommerce-LoopProduct-link .price ins {
-  background-color: unset;
-  background: unset;
-  font-size: 1.5em;
-  color: #377860;
-  font-weight: 700;
-}
-.product .button {
-  display: none !important;
-  position: relative;
-  width: 100%;
-}
-
 .related {
   position: relative;
   display: block;
@@ -2181,4 +2108,12 @@ p {
 .profile-picture-widget .profile-picture-widget-cont .profile-picture-widget-canvas .profile-picture-widget-lvl-3-cont .profile-picture-widget-lvl-3 .profile-picture-widget-lvl-3-element-cont:nth-child(3) {
   bottom: 2.75cm;
   right: 0cm;
+}
+
+.woocommerce-product-gallery {
+  min-width: unset;
+}
+
+.summary {
+  min-width: unset;
 }/*# sourceMappingURL=legacy.css.map */

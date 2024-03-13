@@ -2158,80 +2158,80 @@ p{
 
 
 //WOO COMMERCE PRODUCTS
-.products{
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    margin: 0 auto;
-    //border: 1px solid red;
-    //height: 25cm;
-}
-.product{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    //background: pink;
-    .woocommerce-LoopProduct-link{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        //border: 1px solid blue;
-        width: 100%;
-        overflow: hidden;
-        text-decoration: none;
-        .onsale{
-            position: absolute;
-            z-index: 2;
-            background: $primaryColor;
-            color: white;
-            padding: 10px 50px;
-            left: -35px;
-            top: 10px;
-            transform: rotate(-45deg);
-            text-decoration: none;
-        }
-        img{
-            position: relative;
-            object-fit: cover;
-            width: 100%;
-            height: auto;
-        }
-        .woocommerce-loop-product__title{
-            text-decoration: none;
-            color: black;
-            font-size: 1.25em;
-            margin-left: 10px;
-            margin-bottom: 5px;
-            margin: 0 5%;
-            margin-top: 20px;
-        }
-        .price{
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            text-decoration: none;
-            margin: 0 5%;
-            del{
-                position: relative;
-                color: gray;
-                font-size: 0.9em;
-                font-weight: 400;
-            }
-            ins{
-                background-color: unset;
-                background: unset;
-                font-size: 1.5em;
-                color: $primaryColor;
-                font-weight: 700;
-            }
-        }
-    }
-    .button {
-        display: none !important;
-        position: relative;
-        width: 100%;
-    }
-}
+// .products{
+//     display: flex;
+//     flex-wrap: wrap;
+//     position: relative;
+//     margin: 0 auto;
+//     //border: 1px solid red;
+//     //height: 25cm;
+// }
+// .product{
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+//     //background: pink;
+//     .woocommerce-LoopProduct-link{
+//         position: relative;
+//         display: flex;
+//         flex-direction: column;
+//         //border: 1px solid blue;
+//         width: 100%;
+//         overflow: hidden;
+//         text-decoration: none;
+//         .onsale{
+//             position: absolute;
+//             z-index: 2;
+//             background: $primaryColor;
+//             color: white;
+//             padding: 10px 50px;
+//             left: -35px;
+//             top: 10px;
+//             transform: rotate(-45deg);
+//             text-decoration: none;
+//         }
+//         img{
+//             position: relative;
+//             object-fit: cover;
+//             width: 100%;
+//             height: auto;
+//         }
+//         .woocommerce-loop-product__title{
+//             text-decoration: none;
+//             color: black;
+//             font-size: 1.25em;
+//             margin-left: 10px;
+//             margin-bottom: 5px;
+//             margin: 0 5%;
+//             margin-top: 20px;
+//         }
+//         .price{
+//             position: relative;
+//             display: flex;
+//             flex-direction: column;
+//             text-decoration: none;
+//             margin: 0 5%;
+//             del{
+//                 position: relative;
+//                 color: gray;
+//                 font-size: 0.9em;
+//                 font-weight: 400;
+//             }
+//             ins{
+//                 background-color: unset;
+//                 background: unset;
+//                 font-size: 1.5em;
+//                 color: $primaryColor;
+//                 font-weight: 700;
+//             }
+//         }
+//     }
+//     .button {
+//         display: none !important;
+//         position: relative;
+//         width: 100%;
+//     }
+// }
 
 .related{
     position: relative;
@@ -2511,4 +2511,13 @@ p{
             }
         }
     }
+}
+
+
+.woocommerce-product-gallery{
+    min-width: unset;
+}
+.summary{
+    min-width: unset;
+
 }
