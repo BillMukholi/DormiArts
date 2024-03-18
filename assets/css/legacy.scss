@@ -810,14 +810,15 @@ p{
                         @media(min-width:424px){
                         }
                         @media(min-width:767px){
+                            display: none;
                         }
                         @media(min-width:1023px){
-                            display: none;
                         }
                         @media(min-width:1439px){
                         }
                         position: absolute;
-                        height: 55%;
+                        object-fit: contain;
+                        height: 100%;
                         width: auto;
                         transform: translate(-50%,-50%);
                         left: 50%;
@@ -834,9 +835,9 @@ p{
                         @media(min-width:424px){
                         }
                         @media(min-width:767px){
+                            display: block;
                         }
                         @media(min-width:1023px){
-                            display: block;
                         }
                         @media(min-width:1439px){
                         }
@@ -1253,10 +1254,7 @@ p{
                         bottom: 8%;
                         color: white;
                         .portfolio-carousel-slide-title{
-                            text-wrap: nowrap;
-                            font-family: 'Playfair Display';
                             font-weight: 900;
-                            font-size: 1.7em;
                             margin: 0px;
                             @media(min-width:0px){
                                 font-size: 1.2em;
@@ -1268,20 +1266,35 @@ p{
                             @media(min-width:424px){
                             }
                             @media(min-width:767px){
-                                font-size: 1.5em;
+                                font-size: 1.2em;
                             }
                             @media(min-width:1023px){
-                                font-size: 1.7em;
+                                font-size: 1.3em;
                             }
                             @media(min-width:1439px){
                             }
                         }
                         .portfolio-carousel-slide-subtitle{
-                            text-wrap: nowrap;
-                            font-family: 'Poppins';
-                            font-weight: 300;
-                            font-size: 1em;
+                            // text-wrap: nowrap;
                             margin: 0px;
+                            @media(min-width:0px){
+                                font-size: 0.8em;
+                                line-height: 1.05em;
+                            }
+                            @media(min-width:319px){
+                            }
+                            @media(min-width:374px){
+                            }
+                            @media(min-width:424px){
+                            }
+                            @media(min-width:767px){
+                                font-size: 1em;
+                                line-height: 1.05em;
+                            }
+                            @media(min-width:1023px){
+                            }
+                            @media(min-width:1439px){
+                            }
                         }
                     }
                 }
@@ -1296,11 +1309,11 @@ p{
                         position: absolute;
                         bottom: 0;
                         width: 100%;
-                        height: 50%;
-                        background:  linear-gradient(180deg, #FFFFFF 0% 0%, #000000 100% 100%);
+                        height: 70%;
+                        background:  linear-gradient(180deg, #FFFFFF 0% 0%, #000000 100% 100%); 
                         z-index: 2;
                         mix-blend-mode: Multiply;
-                        opacity: 0.8;
+                        opacity: 1;
 
                     }
                     .portfolio-carousel-slide-bg-img{
@@ -2158,80 +2171,8 @@ p{
 
 
 //WOO COMMERCE PRODUCTS
-// .products{
-//     display: flex;
-//     flex-wrap: wrap;
-//     position: relative;
-//     margin: 0 auto;
-//     //border: 1px solid red;
-//     //height: 25cm;
-// }
-// .product{
-//     position: relative;
-//     display: flex;
-//     flex-direction: column;
-//     //background: pink;
-//     .woocommerce-LoopProduct-link{
-//         position: relative;
-//         display: flex;
-//         flex-direction: column;
-//         //border: 1px solid blue;
-//         width: 100%;
-//         overflow: hidden;
-//         text-decoration: none;
-//         .onsale{
-//             position: absolute;
-//             z-index: 2;
-//             background: $primaryColor;
-//             color: white;
-//             padding: 10px 50px;
-//             left: -35px;
-//             top: 10px;
-//             transform: rotate(-45deg);
-//             text-decoration: none;
-//         }
-//         img{
-//             position: relative;
-//             object-fit: cover;
-//             width: 100%;
-//             height: auto;
-//         }
-//         .woocommerce-loop-product__title{
-//             text-decoration: none;
-//             color: black;
-//             font-size: 1.25em;
-//             margin-left: 10px;
-//             margin-bottom: 5px;
-//             margin: 0 5%;
-//             margin-top: 20px;
-//         }
-//         .price{
-//             position: relative;
-//             display: flex;
-//             flex-direction: column;
-//             text-decoration: none;
-//             margin: 0 5%;
-//             del{
-//                 position: relative;
-//                 color: gray;
-//                 font-size: 0.9em;
-//                 font-weight: 400;
-//             }
-//             ins{
-//                 background-color: unset;
-//                 background: unset;
-//                 font-size: 1.5em;
-//                 color: $primaryColor;
-//                 font-weight: 700;
-//             }
-//         }
-//     }
-//     .button {
-//         display: none !important;
-//         position: relative;
-//         width: 100%;
-//     }
-// }
+// +++
+
 
 .related{
     position: relative;

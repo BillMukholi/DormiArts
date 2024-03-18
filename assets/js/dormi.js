@@ -105,6 +105,8 @@ for(let i = 0; i<mobileMenuItemWithChildren.length; i++){
             gsap.to(subitem,{height:'auto'})
         }
     })
+
+    setTimeout()
 }
 
 
