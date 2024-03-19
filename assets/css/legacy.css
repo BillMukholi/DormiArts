@@ -1129,11 +1129,12 @@ p {
 }
 @media (min-width: 1023px) {
   .portfolio-carousel-cont .portfolio-carousel .portfolio-carousel-slide .portfolio-carousel-slide-link .portfolio-carousel-slide-fg-cont .portfolio-carousel-slide-fg .portfolio-carousel-slide-title {
-    font-size: 1.3em;
+    font-size: 1.4em;
   }
 }
 .portfolio-carousel-cont .portfolio-carousel .portfolio-carousel-slide .portfolio-carousel-slide-link .portfolio-carousel-slide-fg-cont .portfolio-carousel-slide-fg .portfolio-carousel-slide-subtitle {
   margin: 0px;
+  margin-top: 0.5em;
 }
 @media (min-width: 0px) {
   .portfolio-carousel-cont .portfolio-carousel .portfolio-carousel-slide .portfolio-carousel-slide-link .portfolio-carousel-slide-fg-cont .portfolio-carousel-slide-fg .portfolio-carousel-slide-subtitle {

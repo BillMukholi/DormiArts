@@ -1269,7 +1269,7 @@ p{
                                 font-size: 1.2em;
                             }
                             @media(min-width:1023px){
-                                font-size: 1.3em;
+                                font-size: 1.4em;
                             }
                             @media(min-width:1439px){
                             }
@@ -1277,6 +1277,7 @@ p{
                         .portfolio-carousel-slide-subtitle{
                             // text-wrap: nowrap;
                             margin: 0px;
+                            margin-top: 0.5em;
                             @media(min-width:0px){
                                 font-size: 0.8em;
                                 line-height: 1.05em;
