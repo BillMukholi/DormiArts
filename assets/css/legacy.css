@@ -1054,12 +1054,12 @@ p {
 }
 @media (min-width: 0px) {
   .portfolio-carousel-cont .portfolio-carousel .portfolio-carousel-slide {
-    height: 8cm;
+    height: 6cm;
   }
 }
 @media (min-width: 424px) {
   .portfolio-carousel-cont .portfolio-carousel .portfolio-carousel-slide {
-    height: 8cm;
+    height: 7cm;
   }
 }
 @media (min-width: 767px) {
@@ -1119,7 +1119,7 @@ p {
 }
 @media (min-width: 0px) {
   .portfolio-carousel-cont .portfolio-carousel .portfolio-carousel-slide .portfolio-carousel-slide-link .portfolio-carousel-slide-fg-cont .portfolio-carousel-slide-fg .portfolio-carousel-slide-title {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 }
 @media (min-width: 767px) {
